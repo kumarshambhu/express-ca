@@ -1,0 +1,19 @@
+{
+  "name": "ui-app",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bxslider-4": "https://github.com/stevenwanderski/bxslider-4.git#^4.2.12",
+    "jquery-easing": "*"
+  }
+}

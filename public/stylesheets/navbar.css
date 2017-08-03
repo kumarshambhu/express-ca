@@ -1,0 +1,92 @@
+.intro-section {
+    height: 100%;
+    padding-top: 55px;
+    background: #95a5a6;
+}
+
+.about-section {
+    height: 100%;
+    padding-top: 35px;
+    background: #3498db;
+}
+
+.services-section {
+    height: 100%;
+    padding-top: 55px;
+    background: #0077B5;
+}
+
+.contact-section {
+    height: 100%;
+    padding-top: 35px;
+    background: #1abc9c;
+}
+.navbar-default
+{
+    background-color: #692B0A;
+    background-image: none;
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: #8a0e0b;
+    background-color: #26A25A;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #8a0e0b;
+    background-color: #00b3ee;
+}
+.navbar-default .navbar-nav > .active  {
+    color: #8a0e0b;
+    background: #d65c14;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #8a0e0b;
+    background-color: #d65c14;
+}
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #8a0e0b;
+    border-bottom-color: #8a0e0b;
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #8a0e0b;
+    border-bottom-color: #8a0e0b;
+}
+.navbar-default .navbar-toggle {
+    border-color: #d65c14;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #d65c14;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.navbar-default .navbar-nav > .active  {
+
+}
+.navbar-default .navbar-nav > .active{
+    color: #000;
+    background: #d65c14;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #000;
+    background: #d65c14;
+}

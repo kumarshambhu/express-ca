@@ -1,0 +1,104 @@
+#serviceCtrl.showmenu a {
+  border: none;
+  width: auto;
+  height: auto;
+  font-size: 16px;
+  color: rgba(48, 51, 54, 0.5);
+  position: relative;
+  top: -4px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: none !important;
+  line-height: 18px;
+  padding: 0;
+  text-indent: 0;
+}
+
+#serviceCtrl li {
+  list-style: none;
+  float: left;
+  margin-right: 15px
+}
+
+#serviceCtrl li a {
+  -webkit-transition: color .25s, opacity .25s, text-indent .25s;
+  -moz-transition: color .25s, opacity .25s, text-indent .25s;
+  -ms-transition: color .25s, opacity .25s, text-indent .25s;
+  -o-transition: color .25s, opacity .25s, text-indent .25s;
+  transition: color .25s, opacity .25s, text-indent .25s;
+  list-style: none;
+  cursor: pointer;
+  width: 2px;
+  height: 2px;
+  border: 2px solid #303336;
+  overflow: hidden;
+  display: block;
+  color: rgba(48, 51, 54, 0);
+  border-radius: 5px;
+  padding: 3px;
+  text-indent: -20px;
+}
+
+#serviceCtrl li a:hover,
+#serviceCtrl li a:focus,
+#serviceCtrl li a.active {
+  background-color: #303336;
+  opacity: 1;
+  color: rgba(48, 51, 54, 1);
+}
+
+#serviceCtrl.white li a {
+  /*border-color: #fff;*/
+}
+
+#serviceCtrl.white li a:hover,
+#serviceCtrl.white li a:focus,
+#serviceCtrl.white li a.active {
+  /*background-color: #fff;*/
+  opacity: 1;
+}
+
+#serviceCtrl.white li a.active {
+  font-weight: 600;
+}
+.bx-wrapper {
+  position: relative;
+  margin-bottom: 60px;
+  padding: 0;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  /* border: 5px solid #fff;*/
+  background: transparent;
+}
+#serviceCtrl {
+  position: relative;
+  left: 5%;
+  top: 20px;
+  z-index: 10;
+  float: left
+}
+
+.lastBlock .menuicon {
+  position: relative;
+  top: -3px;
+  cursor: pointer
+}
+
+.mobile .lastBlock .menuicon {
+  display: none
+}
+
+#map {
+  height: 250px;
+  width: 100%;
+}
+
+.big-text{
+  font-size: 24px;
+}
