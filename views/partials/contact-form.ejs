@@ -1,7 +1,7 @@
 <div class="panel panel-default">
     <div class="panel-heading">Contact Section</div>
     <div class="panel-body">
-        <form>
+        <form id="comment_form" action='/recaptch' method="post" onsubmit="return validateMyForm();">
             <div class="form-group">
                 <label for="fullname">Full Name:</label>
                 <input type="text" class="form-control" id="fullname" placeholder="Shambhu Kumar"
@@ -18,9 +18,52 @@
                 <textarea class="form-control" rows="5" id="message"
                           placeholder="shambhu.kumar@outlook.com"></textarea>
             </div>
+            <div class="form-group">
+                <!-- Replace data-sitekey with your own one, generated at https://www.google.com/recaptcha/admin -->
+                <div class="g-recaptcha" data-sitekey="6LdvJSoUAAAAANgg1ZttNt9GnOJjEeXjAB_VRz_r"></div>
+            </div>
+            <div>
+                <span id="captcha" style="margin-left:100px;color:red" />
+            </div>
             <button type="submit" class="btn btn-success"><span
                         class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Submit
             </button>
         </form>
     </div>
 </div>
+<script>
+    function validateMyForm() {
+        var v = grecaptcha.getResponse();
+        console.log(v);
+        if(v.length == 0)
+        {
+            document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+            return false;
+        }
+        else
+        {
+            document.getElementById('captcha').innerHTML="Captcha completed";
+            return true;
+        }
+    }
+
+    $(document).ready(function() {
+
+            $('#comment_form').submit(function() {
+                if(validateMyForm()){
+                $(this).ajaxSubmit({
+                    error: function(xhr) {
+                        status('Error: ' + xhr.status);
+                    },
+                    success: function(response) {
+                        console.log(response);
+                    }
+                });
+                //Very important line, it disable the page refresh.
+                return false;
+                }
+            });
+
+
+    });
+</script>
